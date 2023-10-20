@@ -17,6 +17,9 @@ import { MernComponent } from './mern/mern.component';
 import { JavaComponent } from './java/java.component';
 import { JavascriptComponent } from './javascript/javascript.component';
 import { ReactiveFormsModule } from '@angular/forms'
+import {HttpClientModule } from '@angular/common/http';
+import { UserService } from './user.service';
+import { RestComponent } from './rest/rest.component';
 
 @NgModule({
   declarations: [
@@ -33,14 +36,15 @@ import { ReactiveFormsModule } from '@angular/forms'
     MeanComponent,
     MernComponent,
     JavaComponent,
-    JavascriptComponent
+    JavascriptComponent,
+    RestComponent
   ],
   imports: [
     BrowserModule,ReactiveFormsModule,
-    routes,
+    routes,HttpClientModule,
     AppRoutingModule
   ],
-  providers: [],
+  providers: [UserService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

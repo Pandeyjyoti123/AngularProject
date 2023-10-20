@@ -14,6 +14,7 @@ import { MernComponent } from './mern/mern.component';
 import { MeanComponent } from './mean/mean.component';
 import { JavaComponent } from './java/java.component';
 import { JavascriptComponent } from './javascript/javascript.component';
+import { RestComponent } from './rest/rest.component';
 
 //Create and export a variable called Router in the app.routing.ts, which would be a collection of all routes inside the Angular application.
 // pathMatch is specifying a strict matching of path to reach the destination page.
@@ -30,6 +31,7 @@ export const router: Routes = [
     { path: 'mean', component: MeanComponent },
     { path: 'java', component: JavaComponent },
     { path: 'javascript', component: JavascriptComponent },
+    { path: 'restuser', component: RestComponent },
     // { path: 'contact', component: ContactComponent 
 ];
 //RouterModule.forRoot is for creating routes for the entire application
